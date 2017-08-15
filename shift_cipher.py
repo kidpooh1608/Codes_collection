@@ -11,7 +11,10 @@ print "processing a ciphertext shift cipher with key = %r " %key
 ciphertext = []
 
 for i in your_mess:
-    ciphertext.append(chr(ord(i) + key))
+    if (' ' != i):
+        ciphertext.append(chr(ord(i) + key))
+    else:
+        ciphertext.append(' ')
 
 print "ciphertext message: \n"
 print(''.join(ciphertext))
@@ -21,8 +24,14 @@ planitext = []
 print "processing a decrypte shift cipher with key = %r " %key
 
 for i in ciphertext:
-    planitext.append(chr(ord(i) - key))
+    if (' ' != i):
+        planitext.append(chr(ord(i) - key))
+    else:
+        planitext.append(' ')
 
 print "planitext message: \n"
 print(''.join(planitext))
+
+
+
 
