@@ -6,7 +6,7 @@ your_mess = str(raw_input('Please enter your message > '))
 key = random.randint(1, 5)
 #print key
 
-print "processing a shift cipher with key = %r " %key
+print "processing a ciphertext shift cipher with key = %r " %key
 
 ciphertext = []
 
@@ -16,5 +16,13 @@ for i in your_mess:
 print "ciphertext message: \n"
 print(''.join(ciphertext))
 
+planitext = []
 
+print "processing a decrypte shift cipher with key = %r " %key
+
+for i in ciphertext:
+    planitext.append(chr(ord(i) - key))
+
+print "planitext message: \n"
+print(''.join(planitext))
 
