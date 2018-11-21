@@ -14,7 +14,7 @@ void Queue::push(int item)
 	}
 	else
 	{
-		newNode->next = this->_back;
+		this->_back->next = newNode;
 		this->_back = newNode;
 	}
 }
@@ -25,17 +25,9 @@ int Queue::down()
 void Queue::pop()
 {
 	node *tmp;
-	tmp = this->_back;
-	while(tmp->next != this->_front)
-	{
-		tmp = tmp->next;
-	}
-
-	node *tmp_fr = this->_front;
-
-	this->_front = tmp;
-
-	delete tmp_fr;
+	tmp = this->_front;
+	this->_front = this->_front->next;
+	delete tmp;
 }
 
 
