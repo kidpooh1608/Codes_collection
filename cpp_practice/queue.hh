@@ -1,13 +1,5 @@
-/*
- * queue.hh
- *
- *  Created on: Nov 20, 2018
- *      Author: ptnguyen
- */
-
 #ifndef QUEUE_HH_
 #define QUEUE_HH_
-#include <list>
 using namespace std;
 typedef struct node
 {

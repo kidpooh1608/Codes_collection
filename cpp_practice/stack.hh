@@ -1,9 +1,3 @@
-/*
- * test.hh
- *
- *  Created on: Nov 20, 2018
- *      Author: ptnguyen
- */
 
 #ifndef TEST_HH_
 #define TEST_HH_

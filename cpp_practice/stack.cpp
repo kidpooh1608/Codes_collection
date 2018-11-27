@@ -1,10 +1,4 @@
-/*
- * test.cpp
- *
- *  Created on: Nov 20, 2018
- *      Author: ptnguyen
- */
-#include"test.hh"
+#include"stack.hh"
 #include <iostream>
 //using namespace std;
 
